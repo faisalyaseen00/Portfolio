@@ -24,15 +24,39 @@ function updateThemeIcon(theme) {
     themeIcon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
 }
 
+// Typing animation for hero headline
+function typeHeadline(text, elementId, speed = 45) {
+    const el = document.getElementById(elementId);
+    let i = 0;
+    function type() {
+        if (i < text.length) {
+            el.textContent += text.charAt(i);
+            i++;
+            setTimeout(type, speed);
+        }
+    }
+    el.textContent = '';
+    type();
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    setActiveNavLink();
+    // Typing animation
+    typeHeadline('Curious mind at the intersection of AI & Cybersecurity.', 'typing-headline', 45);
+});
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth'
-            });
+        const href = this.getAttribute('href');
+        if (href.startsWith('#')) {
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
         }
     });
 });
@@ -49,7 +73,4 @@ function setActiveNavLink() {
             link.classList.remove('active');
         }
     });
-}
-
-// Call setActiveNavLink when the page loads
-document.addEventListener('DOMContentLoaded', setActiveNavLink); 
+} 

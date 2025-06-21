@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - My Portfolio</title>
+    <title>Projects - Faisal Yaseen Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -212,10 +212,13 @@
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
-        <div class="nav-brand">Portfolio</div>
+        <div class="nav-brand">Faisal Yaseen</div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
         <button id="theme-toggle" class="theme-toggle">
@@ -223,55 +226,146 @@
         </button>
     </nav>
 
-    <!-- Projects Section -->
     <section class="container">
         <h1 class="section-title">My Projects</h1>
-        <div class="projects-grid">
-            <!-- Project Card 1 -->
-            <div class="project-card" data-project="project1">
-                <div class="project-content">
-                    <h3 class="project-title">Xonix-Style Territory Capture Game</h3>
-                    <p>A modern C++ recreation of the classic Xonix game using SFML</p>
-                    <div class="project-links">
-                        <a href="#" class="details-link">Details</a>
-                        <a href="https://github.com/faisalyaseen00" target="_blank" class="project-link">View Project</a>
-                    </div>
+
+        <!-- Cybersecurity & AI Projects -->
+        <h2 class="project-section-title"><i class="fas fa-shield-alt"></i> Cybersecurity & AI Projects</h2>
+        <div class="projects-list">
+            <div class="project-card advanced-hover">
+                <div class="project-main">
+                    <span class="project-title">AI-Driven Cybersecurity System (FYP – Planned)</span>
+                    <span class="project-status">Planned</span>
+                </div>
+                <div class="project-tags">
+                    <span class="skill-tag">Machine Learning</span>
+                    <span class="skill-tag">Threat Detection</span>
+                    <span class="skill-tag">Python</span>
+                </div>
+                <div class="project-summary">Designing a machine learning-based threat detection system with teammate Waseem to proactively identify and respond to anomalies in network traffic.</div>
+                <div class="project-details">
+                    <strong>Vision:</strong> Proactive anomaly detection in real-time network traffic.<br>
+                    <strong>Role:</strong> Lead developer & researcher.<br>
+                    <strong>Tech:</strong> Python, ML, Security Automation, QRadar, Darktrace.
                 </div>
             </div>
-
-            <!-- Project Card 2 -->
-            <div class="project-card" data-project="project2">
-                <div class="project-content">
-                    <h3 class="project-title">Stationery Hub – Inventory Management System</h3>
-                    <p>A web-based application for managing stationery inventory and sales</p>
-                    <div class="project-links">
-                        <a href="#" class="details-link">Details</a>
-                        <a href="https://github.com/faisalyaseen00" target="_blank" class="project-link">View Project</a>
-                    </div>
+            <div class="project-card advanced-hover">
+                <div class="project-main">
+                    <span class="project-title">Web Penetration Testing Lab (Completed)</span>
+                    <span class="project-status">Completed</span>
+                </div>
+                <div class="project-tags">
+                    <span class="skill-tag">Ethical Hacking</span>
+                    <span class="skill-tag">Burp Suite</span>
+                    <span class="skill-tag">OWASP ZAP</span>
+                    <span class="skill-tag">Nmap</span>
+                </div>
+                <div class="project-summary">Simulated real-world attacks using tools like Burp Suite, OWASP ZAP, and Nmap. Practiced ethical hacking, vulnerability scanning, and secure reporting.</div>
+                <div class="project-details">
+                    <strong>Skills:</strong> Vulnerability assessment, secure reporting, hands-on labs.<br>
+                    <strong>Impact:</strong> Strengthened web security knowledge and ethical hacking skills.
                 </div>
             </div>
-
-            <!-- Project Card 3 -->
-            <div class="project-card" data-project="project3">
-                <div class="project-content">
-                    <h3 class="project-title">GameBoy – Multi-Game Desktop Suite</h3>
-                    <p>A desktop game application featuring three mini-games</p>
-                    <div class="project-links">
-                        <a href="#" class="details-link">Details</a>
-                        <a href="https://github.com/faisalyaseen00" target="_blank" class="project-link">View Project</a>
-                    </div>
+            <div class="project-card advanced-hover">
+                <div class="project-main">
+                    <span class="project-title">Secure Chat Application (Completed)</span>
+                    <span class="project-status">Completed</span>
+                </div>
+                <div class="project-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Encryption</span>
+                    <span class="skill-tag">Authentication</span>
+                </div>
+                <div class="project-summary">Developed a secure messaging tool using Python, focused on basic encryption techniques and user authentication protocols.</div>
+                <div class="project-details">
+                    <strong>Focus:</strong> End-to-end encryption, user authentication.<br>
+                    <strong>Outcome:</strong> Demonstrated secure communication principles in practice.
                 </div>
             </div>
+        </div>
 
-            <!-- Project Card 4 -->
-            <div class="project-card" data-project="project4">
-                <div class="project-content">
-                    <h3 class="project-title">Library Management System</h3>
-                    <p>A C++ console application for managing library records and book lending</p>
-                    <div class="project-links">
-                        <a href="#" class="details-link">Details</a>
-                        <a href="https://github.com/faisalyaseen00" target="_blank" class="project-link">View Project</a>
-                    </div>
+        <!-- Software & Systems Projects -->
+        <h2 class="project-section-title"><i class="fas fa-server"></i> Software & Systems Projects</h2>
+        <div class="projects-list">
+            <div class="project-card advanced-hover">
+                <div class="project-main">
+                    <span class="project-title">Library Management System (Completed)</span>
+                    <span class="project-status">Completed</span>
+                </div>
+                <div class="project-tags">
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">File Handling</span>
+                </div>
+                <div class="project-summary">Command-line C++ application for managing book records, borrow/return tracking, and library member logs using file handling.</div>
+                <div class="project-details">
+                    <strong>Features:</strong> Book management, member logs, file-based storage.<br>
+                    <strong>Impact:</strong> Improved library operations and record-keeping.
+                </div>
+            </div>
+            <div class="project-card advanced-hover">
+                <div class="project-main">
+                    <span class="project-title">Digital Café Management System (Completed)</span>
+                    <span class="project-status">Completed</span>
+                </div>
+                <div class="project-tags">
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">Console UI</span>
+                </div>
+                <div class="project-summary">C++-based system to manage café orders, item menus, billing, and customer logs through a structured console interface.</div>
+                <div class="project-details">
+                    <strong>Features:</strong> Order management, billing, menu system.<br>
+                    <strong>Outcome:</strong> Streamlined café operations and customer service.
+                </div>
+            </div>
+            <div class="project-card advanced-hover">
+                <div class="project-main">
+                    <span class="project-title">Backend Inventory Management System (Completed)</span>
+                    <span class="project-status">Completed</span>
+                </div>
+                <div class="project-tags">
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">File Storage</span>
+                </div>
+                <div class="project-summary">Developed backend logic for inventory tracking with manual file storage, control flows, and search/filter functionalities.</div>
+                <div class="project-details">
+                    <strong>Features:</strong> Inventory tracking, search/filter, file-based backend.<br>
+                    <strong>Impact:</strong> Enhanced inventory management for small businesses.
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Development Projects -->
+        <h2 class="project-section-title"><i class="fas fa-gamepad"></i> Game Development Projects</h2>
+        <div class="projects-list">
+            <div class="project-card advanced-hover">
+                <div class="project-main">
+                    <span class="project-title">Xonix-Style SFML Game (Completed)</span>
+                    <span class="project-status">Completed</span>
+                </div>
+                <div class="project-tags">
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">SFML</span>
+                    <span class="skill-tag">Game AI</span>
+                </div>
+                <div class="project-summary">Developed a feature-rich C++ game with tile capturing mechanics, enemy AI, multiplayer support, login system, leaderboard (min-heap), and inventory (AVL Tree).</div>
+                <div class="project-details">
+                    <strong>Features:</strong> Multiplayer, AI, leaderboard, inventory system.<br>
+                    <strong>Tech:</strong> C++, SFML, Data Structures.
+                </div>
+            </div>
+            <div class="project-card advanced-hover">
+                <div class="project-main">
+                    <span class="project-title">GameBoy – Mini Game App (Completed)</span>
+                    <span class="project-status">Completed</span>
+                </div>
+                <div class="project-tags">
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">Terminal UI</span>
+                </div>
+                <div class="project-summary">A bundled terminal application featuring Snake, Hangman, and Sandouz — with scoring system and user interface for a smooth experience.</div>
+                <div class="project-details">
+                    <strong>Games:</strong> Snake, Hangman, Sandouz.<br>
+                    <strong>Features:</strong> Scoring, user interface, bundled experience.
                 </div>
             </div>
         </div>
@@ -312,89 +406,17 @@
 
     <script src="script.js"></script>
     <script>
-        // Project data
-        const projects = {
-            project1: {
-                title: "Xonix-Style Territory Capture Game",
-                description: "A modern C++ recreation of the classic Xonix game using SFML. Features include real-time tile capture logic, enemy pathfinding and collision detection, single and multiplayer modes, start and end menus with scoring, and player login and leaderboard systems.",
-                technologies: ["C++", "SFML", "Game Development", "Object-Oriented Programming"],
-                challenges: "Implementing complex enemy AI and real-time tile capture mechanics.",
-                solutions: "Developed efficient algorithms for enemy pathfinding and optimized tile capture logic for smooth gameplay."
-            },
-            project2: {
-                title: "Stationery Hub – Inventory Management System",
-                description: "A comprehensive web-based application for managing stationery inventory, orders, and sales. Features include inventory management, stock level tracking, reorder alerts, sales recordkeeping, admin dashboard, and role-based access control.",
-                technologies: ["JavaScript", "HTML", "PHP", "MySQL", "Web Development"],
-                challenges: "Implementing real-time inventory updates and managing concurrent user sessions.",
-                solutions: "Used database transactions and implemented proper session management for secure access control."
-            },
-            project3: {
-                title: "GameBoy – Multi-Game Desktop Suite",
-                description: "A bundled desktop gaming experience featuring three mini-games: Hangman, Snake, and Sudio (a custom rhythm-based game). The project demonstrates SFML graphics implementation, game loop management, and modular C++ design.",
-                technologies: ["C++", "SFML", "Game Development", "UI Design"],
-                challenges: "Creating engaging gameplay mechanics and smooth user interfaces for each game.",
-                solutions: "Implemented modular design patterns and optimized game loops for consistent performance."
-            },
-            project4: {
-                title: "Library Management System",
-                description: "A C++ console application for managing library records, book lending, and student data. Features include book management, student registration, loan history tracking, fine calculations, and file-based storage.",
-                technologies: ["C++", "File I/O", "Object-Oriented Programming", "Console UI"],
-                challenges: "Managing complex data relationships and implementing efficient file operations.",
-                solutions: "Designed robust class structures and implemented efficient file handling mechanisms."
-            }
-        };
-
-        // Modal functionality
-        const modal = document.getElementById('project-modal');
-        const modalContent = document.getElementById('modal-content');
-        const closeModal = document.querySelector('.close-modal');
-
-        // Open modal when project card is clicked
-        document.querySelectorAll('.project-card').forEach(card => {
-            card.addEventListener('click', () => {
-                const projectId = card.getAttribute('data-project');
-                const project = projects[projectId];
-                
-                modalContent.innerHTML = `
-                    <h2>${project.title}</h2>
-                    
-                    <div class="modal-section">
-                        <h3>Description</h3>
-                        <p>${project.description}</p>
-                    </div>
-
-                    <div class="modal-section">
-                        <h3>Technologies Used</h3>
-                        <div>
-                            ${project.technologies.map(tech => `<span class="skill-tag">${tech}</span>`).join('')}
-                        </div>
-                    </div>
-
-                    <div class="modal-section">
-                        <h3>Challenges</h3>
-                        <p>${project.challenges}</p>
-                    </div>
-
-                    <div class="modal-section">
-                        <h3>Solutions</h3>
-                        <p>${project.solutions}</p>
-                    </div>
-                `;
-                
-                modal.style.display = 'block';
-            });
+    // Show/hide project details on hover
+    document.querySelectorAll('.advanced-hover').forEach(card => {
+        const details = card.querySelector('.project-details');
+        details.style.display = 'none';
+        card.addEventListener('mouseenter', () => {
+            details.style.display = 'block';
         });
-
-        // Close modal when clicking the close button or outside the modal
-        closeModal.addEventListener('click', () => {
-            modal.style.display = 'none';
+        card.addEventListener('mouseleave', () => {
+            details.style.display = 'none';
         });
-
-        window.addEventListener('click', (e) => {
-            if (e.target === modal) {
-                modal.style.display = 'none';
-            }
-        });
+    });
     </script>
 </body>
 </html> 
