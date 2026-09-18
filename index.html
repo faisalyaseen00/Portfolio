@@ -3,94 +3,558 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faisal Yaseen | AI & Cybersecurity Portfolio</title>
+    <meta name="description" content="Faisal Yaseen — AI & Security Engineer building intelligent systems, secure applications, and AI-powered security solutions.">
+    <meta name="author" content="Faisal Yaseen">
+    <title>Faisal Yaseen | AI & Security Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
-    <!-- Navigation Bar -->
+<body class="home-page">
+
     <nav class="navbar">
-        <div class="nav-brand">Faisal Yaseen</div>
+        <div class="nav-brand"><a href="index.html">Faisal Yaseen</a></div>
+
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+
         <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="certifications.html">Certifications</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="about.html" data-section="about">About</a></li>
+            <li><a href="work.html" data-section="work">Work</a></li>
+            <li><a href="experience.html" data-section="experience">Experience</a></li>
+            <li><a href="contact.html" data-section="contact">Contact</a></li>
         </ul>
-        <button id="theme-toggle" class="theme-toggle">
+
+        <div class="nav-cv-wrap">
+            <button class="nav-cv" type="button" aria-expanded="false" aria-haspopup="true">
+                CVs <i class="fas fa-chevron-down" style="font-size:0.65em"></i>
+            </button>
+            <div class="cv-menu" role="menu">
+                <a href="assets/cv/faisal-ai.pdf" download role="menuitem">AI Engineer CV</a>
+                <a href="assets/cv/faisal-security.pdf" download role="menuitem">Security Engineer CV</a>
+                <a href="assets/cv/faisal-software.pdf" download role="menuitem">Software Engineer CV</a>
+            </div>
+        </div>
+
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
             <i class="fas fa-moon"></i>
         </button>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="typing-animation" id="typing-headline"></h1>
-                <p class="subtitle">Web Penetration | Threat Detection | AI Automation Enthusiast</p>
-                <div class="cta-buttons">
-                    <a href="projects.html" class="btn primary">View My Projects</a>
-                    <a href="Faisal Yaseen CV (3).pdf" class="btn secondary" download>Download CV</a>
-                    <a href="contact.html" class="btn outline">Let's Connect</a>
-                </div>
-                <ul class="social-links">
-                    <li><a href="https://github.com/faisalyaseen00" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/faisal-yaseen-b0604a2b2" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
-                    <li><a href="mailto:your.email@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
-                </ul>
-            </div>
-            <div class="profile-image">
-                <div class="circle-container">
-                    <img src="Pic.jpg" alt="Faisal Yaseen" class="profile-pic">
-                </div>
-                <ul class="profile-bullets">
-                    <li>✔️ Completed 6-month web penetration course</li>
-                    <li>✔️ Near completion of Google Cybersecurity Certificate</li>
-                    <li>✔️ Building AI-driven cybersecurity FYP — a year in advance</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+    <main>
+        <!-- HOME / HERO -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-label">AI • SECURITY • SOFTWARE</p>
+                    <h1>AI &amp; Security Engineer</h1>
+                    <p class="hero-description">
+                        Building intelligent systems, secure applications,
+                        and AI-powered security solutions.
+                    </p>
 
-    <!-- Education Section -->
-    <section class="education-section" id="education">
-        <div class="container">
-            <h2>Education</h2>
-            <div class="education-details">
-                <span class="edu-degree">BS Cyber Security</span>
-                <span class="edu-institution">FAST National University, Islamabad</span>
-                <span class="edu-status">Currently Enrolled</span>
-            </div>
-        </div>
-    </section>
+                    <div class="hero-domains">
+                        <span>AI Engineering</span>
+                        <span>AI Security</span>
+                        <span>Application Security</span>
+                        <span>Backend Development</span>
+                    </div>
 
-    <!-- Contact Section -->
-    <section class="contact-section">
-        <div class="container">
-            <h2>Get in Touch</h2>
-            <div class="contact-details">
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <a href="mailto:arainf287@gmail.com">arainf287@gmail.com</a>
+                    <div class="cta-buttons">
+                        <a href="#work" class="btn primary">Explore My Work</a>
+                        <a href="#resumes" class="btn secondary">View CVs</a>
+                        <a href="#contact" class="btn outline">Let's Connect</a>
+                    </div>
+
+                    <ul class="social-links">
+                        <li>
+                            <a href="https://github.com/faisalyaseen00" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/faisal-yaseen-b0604a2b2" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:fyaseen846@gmail.com" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <a href="tel:+923073708984">+92 307 3708984</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-github"></i>
-                    <a href="https://github.com/faisalyaseen00" target="_blank">GitHub</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-linkedin"></i>
-                    <a href="https://www.linkedin.com/in/faisal-yaseen-b0604a2b2" target="_blank">LinkedIn</a>
+
+                <div class="hero-visual">
+                    <div id="three-container" class="three-container"></div>
+                    <div class="hero-orb">
+                        <div class="orb-core"></div>
+                    </div>
+                    <div class="hero-status">
+                        <span class="status-dot"></span>
+                        Building intelligent systems
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
+            <div class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <i class="fas fa-arrow-down"></i>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>About Me</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p class="section-intro">
+                            I'm a Cyber Security student and engineer focused
+                            on the intersection of artificial intelligence,
+                            security, and software development.
+                        </p>
+                        <p>
+                            My work spans AI engineering, agentic workflows,
+                            AI security, application security, backend
+                            development, and security-focused software.
+                        </p>
+                        <p>
+                            I enjoy taking security and software problems
+                            and turning them into practical systems that
+                            can actually be used.
+                        </p>
+
+                        <div class="about-stats">
+                            <div class="stat-card">
+                                <strong>3</strong>
+                                <span>Engineering Domains</span>
+                            </div>
+                            <div class="stat-card">
+                                <strong>6</strong>
+                                <span>Featured Projects</span>
+                            </div>
+                            <div class="stat-card">
+                                <strong>3</strong>
+                                <span>Industry Internships</span>
+                            </div>
+                        </div>
+
+                        <div class="section-more">
+                            <a href="about.html" class="btn outline">More About Me</a>
+                        </div>
+                    </div>
+
+                    <img
+                        class="about-photo"
+                        src="Faisal%20Yaseen.jpg"
+                        alt="Faisal Yaseen"
+                        width="400"
+                        height="500"
+                    >
+                </div>
+            </div>
+        </section>
+
+        <!-- DOMAINS -->
+        <section class="domains-section" id="domains">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>What I Build</h2>
+                </div>
+
+                <div class="domains-grid">
+                    <article class="domain-card">
+                        <div class="domain-icon"><i class="fas fa-brain"></i></div>
+                        <h3>AI Engineering</h3>
+                        <p>
+                            Building LLM-powered applications, agentic
+                            workflows, RAG systems, and intelligent
+                            automation.
+                        </p>
+                        <div class="tech-list">
+                            <span>LangChain</span>
+                            <span>LangGraph</span>
+                            <span>LLMs</span>
+                            <span>RAG</span>
+                            <span>AI Agents</span>
+                            <span>Python</span>
+                        </div>
+                    </article>
+
+                    <article class="domain-card">
+                        <div class="domain-icon"><i class="fas fa-shield-halved"></i></div>
+                        <h3>Security Engineering</h3>
+                        <p>
+                            Developing security-focused systems across AI
+                            security, application security, threat detection,
+                            and secure software.
+                        </p>
+                        <div class="tech-list">
+                            <span>AI Security</span>
+                            <span>AppSec</span>
+                            <span>Threat Detection</span>
+                            <span>Model Security</span>
+                            <span>Web Security</span>
+                        </div>
+                    </article>
+
+                    <article class="domain-card">
+                        <div class="domain-icon"><i class="fas fa-code"></i></div>
+                        <h3>Software Engineering</h3>
+                        <p>
+                            Designing backend and full-stack applications
+                            with practical APIs, databases, authentication,
+                            and deployment.
+                        </p>
+                        <div class="tech-list">
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>PostgreSQL</span>
+                            <span>Docker</span>
+                            <span>REST APIs</span>
+                            <span>Full-Stack</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- WORK -->
+        <section class="work-section" id="work">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Featured Work</h2>
+                </div>
+                <p class="section-description">
+                    A selection of systems I've built across AI,
+                    security, and software engineering.
+                </p>
+
+                <article class="featured-project">
+                    <div class="project-number">01</div>
+                    <div class="project-content">
+                        <span class="project-category">AI ENGINEERING • BACKEND</span>
+                        <h3>Liyana</h3>
+                        <p>
+                            A phone-first intelligent digital companion
+                            designed to combine AI, automation, memory,
+                            tasks, communication, and productivity into
+                            a unified assistant.
+                        </p>
+                        <div class="project-tech">
+                            <span>AI</span>
+                            <span>LangChain</span>
+                            <span>LangGraph</span>
+                            <span>FastAPI</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <a href="https://github.com/faisalyaseen00/Liyana-Virtual-Assistant" class="project-link" target="_blank" rel="noopener noreferrer">
+                            Explore Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="featured-project">
+                    <div class="project-number">02</div>
+                    <div class="project-content">
+                        <span class="project-category">AI SECURITY • FYP</span>
+                        <h3>ModelCage</h3>
+                        <p>
+                            A sandboxing system designed to safely execute
+                            and analyze potentially malicious machine
+                            learning model artifacts inside isolated
+                            environments.
+                        </p>
+                        <div class="project-tech">
+                            <span>AI Security</span>
+                            <span>Python</span>
+                            <span>Docker</span>
+                            <span>gVisor</span>
+                            <span>Syscalls</span>
+                        </div>
+                        <a href="https://github.com/faisalyaseen00/ModelCage-Backend" class="project-link" target="_blank" rel="noopener noreferrer">
+                            Explore Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="featured-project">
+                    <div class="project-number">03</div>
+                    <div class="project-content">
+                        <span class="project-category">AGENTIC AI • AI GOVERNANCE</span>
+                        <h3>VDPO</h3>
+                        <p>
+                            A LangChain-based Virtual Data Protection Officer
+                            system designed to automate privacy and AI
+                            governance workflows.
+                        </p>
+                        <div class="project-tech">
+                            <span>LangChain</span>
+                            <span>Agentic AI</span>
+                            <span>AI Governance</span>
+                            <span>Python</span>
+                        </div>
+                        <a href="https://github.com/faisalyaseen00" class="project-link" target="_blank" rel="noopener noreferrer">
+                            Explore Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <div class="project-grid">
+                    <article class="project-card">
+                        <span class="project-category">CYBERSECURITY</span>
+                        <h3>Phishing Domain Detector</h3>
+                        <p>
+                            A web application for identifying potentially
+                            malicious and phishing websites.
+                        </p>
+                        <div class="project-tech">
+                            <span>Web Security</span>
+                            <span>Python</span>
+                            <span>Flask</span>
+                        </div>
+                        <a href="https://github.com/faisalyaseen00/Phishing-Domain-Detector" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+                    </article>
+
+                    <article class="project-card">
+                        <span class="project-category">FULL-STACK</span>
+                        <h3>Stationery Management System</h3>
+                        <p>
+                            A full-stack web application for managing
+                            stationery inventory and operations.
+                        </p>
+                        <div class="project-tech">
+                            <span>Full-Stack</span>
+                            <span>Web</span>
+                            <span>Database</span>
+                        </div>
+                        <a href="https://github.com/faisalyaseen00" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+                    </article>
+
+                    <article class="project-card">
+                        <span class="project-category">SOFTWARE ENGINEERING</span>
+                        <h3>Xonic Game</h3>
+                        <p>
+                            A C++ multiplayer game built with SFML,
+                            OOP, and practical data structures.
+                        </p>
+                        <div class="project-tech">
+                            <span>C++</span>
+                            <span>SFML</span>
+                            <span>AVL Tree</span>
+                        </div>
+                        <a href="https://github.com/faisalyaseen00" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+                    </article>
+                </div>
+
+                <div class="work-cta">
+                    <a href="work.html" class="btn secondary">View Full Work Page</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section class="experience-section" id="experience">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Experience</h2>
+                </div>
+
+                <div class="experience-timeline">
+                    <article class="experience-item">
+                        <div class="experience-marker"></div>
+                        <div class="experience-content">
+                            <span class="experience-duration">2 MONTHS</span>
+                            <h3>AI Engineer</h3>
+                            <h4>AIgilityX</h4>
+                            <p>
+                                Worked on AI engineering and agentic
+                                workflows, including development of
+                                expert-agent systems and the VDPO project.
+                            </p>
+                            <div class="experience-tags">
+                                <span>AI Engineering</span>
+                                <span>Agentic Workflows</span>
+                                <span>AI Governance</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="experience-item">
+                        <div class="experience-marker"></div>
+                        <div class="experience-content">
+                            <span class="experience-duration">1 MONTH</span>
+                            <h3>AI Security Engineer</h3>
+                            <h4>Cydea Tech</h4>
+                            <p>
+                                Worked on security-oriented AI development
+                                and AI security tasks.
+                            </p>
+                            <div class="experience-tags">
+                                <span>AI Security</span>
+                                <span>Security Engineering</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="experience-item">
+                        <div class="experience-marker"></div>
+                        <div class="experience-content">
+                            <span class="experience-duration">1 MONTH</span>
+                            <h3>AI Security Engineer</h3>
+                            <h4>Protect Lab</h4>
+                            <p>
+                                Worked on security-focused development,
+                                including phishing and malicious website
+                                detection.
+                            </p>
+                            <div class="experience-tags">
+                                <span>AI Security</span>
+                                <span>Threat Detection</span>
+                                <span>Web Security</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION & CERTIFICATIONS -->
+        <section class="edu-cert-section" id="education">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Education &amp; Certifications</h2>
+                </div>
+
+                <div class="edu-cert-grid">
+                    <article class="education-card">
+                        <div class="certification-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <span class="education-label">Currently Enrolled</span>
+                        <h3>BS Cyber Security</h3>
+                        <p>
+                            FAST National University of Computer and
+                            Emerging Sciences — Islamabad
+                        </p>
+                    </article>
+
+                    <article class="certification-card">
+                        <div class="certification-icon">
+                            <i class="fas fa-shield-halved"></i>
+                        </div>
+                        <span>CYBERSECURITY</span>
+                        <h3>Google Cybersecurity Professional Certificate</h3>
+                        <p>Threat detection, incident response, and security fundamentals.</p>
+                    </article>
+
+                    <article class="certification-card">
+                        <div class="certification-icon">
+                            <i class="fas fa-user-secret"></i>
+                        </div>
+                        <span>APPLICATION SECURITY</span>
+                        <h3>Web Application Penetration Testing</h3>
+                        <p>6-month professional training in ethical hacking and web security.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CVS -->
+        <section class="resume-section" id="resumes">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Choose Your CV</h2>
+                </div>
+                <p class="section-description">
+                    Different roles require different emphasis.
+                    Choose the version relevant to your opportunity.
+                </p>
+
+                <div class="resume-grid">
+                    <article class="resume-card">
+                        <div class="resume-icon"><i class="fas fa-brain"></i></div>
+                        <span>AI ENGINEERING</span>
+                        <h3>AI Engineer CV</h3>
+                        <p>
+                            AI systems, LLMs, agentic workflows,
+                            LangChain, LangGraph, RAG, and AI applications.
+                        </p>
+                        <a href="assets/cv/faisal-ai.pdf" class="btn primary" download>Download CV</a>
+                    </article>
+
+                    <article class="resume-card">
+                        <div class="resume-icon"><i class="fas fa-shield-halved"></i></div>
+                        <span>SECURITY ENGINEERING</span>
+                        <h3>Security Engineer CV</h3>
+                        <p>
+                            AI security, application security, threat
+                            detection, secure development, and
+                            cybersecurity.
+                        </p>
+                        <a href="assets/cv/faisal-security.pdf" class="btn primary" download>Download CV</a>
+                    </article>
+
+                    <article class="resume-card">
+                        <div class="resume-icon"><i class="fas fa-code"></i></div>
+                        <span>SOFTWARE ENGINEERING</span>
+                        <h3>Backend / Full-Stack CV</h3>
+                        <p>
+                            Backend systems, APIs, Python, FastAPI,
+                            databases, Docker, and full-stack applications.
+                        </p>
+                        <a href="assets/cv/faisal-software.pdf" class="btn primary" download>Download CV</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact-home" id="contact">
+            <div class="container">
+                <div class="contact-panel home-contact">
+                    <p class="page-label">Contact</p>
+                    <h2>Let's build something</h2>
+                    <p class="page-lead">
+                        Interested in AI engineering, security, or software
+                        development? Reach out anytime.
+                    </p>
+
+                    <div class="contact-links">
+                        <a href="mailto:fyaseen846@gmail.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>fyaseen846@gmail.com</span>
+                            <span>Email</span>
+                        </a>
+                        <a href="https://github.com/faisalyaseen00" class="contact-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            <span>faisalyaseen00</span>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/faisal-yaseen-b0604a2b2" class="contact-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                            <span>Faisal Yaseen</span>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Faisal Yaseen. Built with purpose.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="script.js"></script>
 </body>
-</html> 
+</html>

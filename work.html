@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects by Faisal Yaseen — AI engineering, security systems, and software applications.">
+    <meta name="author" content="Faisal Yaseen">
+    <title>Work | Faisal Yaseen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-brand"><a href="index.html">Faisal Yaseen</a></div>
+
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html" class="active">Work</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-cv-wrap">
+            <button class="nav-cv" type="button" aria-expanded="false" aria-haspopup="true">
+                CVs <i class="fas fa-chevron-down" style="font-size:0.65em"></i>
+            </button>
+            <div class="cv-menu" role="menu">
+                <a href="assets/cv/faisal-ai.pdf" download role="menuitem">AI Engineer CV</a>
+                <a href="assets/cv/faisal-security.pdf" download role="menuitem">Security Engineer CV</a>
+                <a href="assets/cv/faisal-software.pdf" download role="menuitem">Software Engineer CV</a>
+            </div>
+        </div>
+
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+
+    <main>
+        <section class="page-section work-section">
+            <div class="container">
+                <p class="page-label">Work</p>
+                <h1 class="page-title">Selected projects</h1>
+                <p class="page-lead page-lead-tight">
+                    Systems I've built across AI engineering, security,
+                    and software development.
+                </p>
+
+                <article class="featured-project">
+                    <div class="project-number">01</div>
+                    <div class="project-content">
+                        <span class="project-category">AI ENGINEERING • BACKEND</span>
+                        <h3>Liyana</h3>
+                        <p>
+                            A phone-first intelligent digital companion
+                            designed to combine AI, automation, memory,
+                            tasks, communication, and productivity into
+                            a unified assistant.
+                        </p>
+                        <div class="project-tech">
+                            <span>AI</span>
+                            <span>LangChain</span>
+                            <span>LangGraph</span>
+                            <span>FastAPI</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <a href="https://github.com/faisalyaseen00/Liyana-Virtual-Assistant" class="project-link" target="_blank" rel="noopener noreferrer">
+                            Explore Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="featured-project">
+                    <div class="project-number">02</div>
+                    <div class="project-content">
+                        <span class="project-category">AI SECURITY • FYP</span>
+                        <h3>ModelCage</h3>
+                        <p>
+                            A sandboxing system designed to safely execute
+                            and analyze potentially malicious machine
+                            learning model artifacts inside isolated
+                            environments.
+                        </p>
+                        <div class="project-tech">
+                            <span>AI Security</span>
+                            <span>Python</span>
+                            <span>Docker</span>
+                            <span>gVisor</span>
+                            <span>Syscalls</span>
+                        </div>
+                        <a href="https://github.com/faisalyaseen00/ModelCage-Backend" class="project-link" target="_blank" rel="noopener noreferrer">
+                            Explore Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="featured-project">
+                    <div class="project-number">03</div>
+                    <div class="project-content">
+                        <span class="project-category">AGENTIC AI • AI GOVERNANCE</span>
+                        <h3>VDPO</h3>
+                        <p>
+                            A LangChain-based Virtual Data Protection Officer
+                            system designed to automate privacy and AI
+                            governance workflows.
+                        </p>
+                        <div class="project-tech">
+                            <span>LangChain</span>
+                            <span>Agentic AI</span>
+                            <span>AI Governance</span>
+                            <span>Python</span>
+                        </div>
+                        <a href="https://github.com/faisalyaseen00" class="project-link" target="_blank" rel="noopener noreferrer">
+                            Explore Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <div class="project-grid">
+                    <article class="project-card">
+                        <span class="project-category">CYBERSECURITY</span>
+                        <h3>Phishing Domain Detector</h3>
+                        <p>
+                            A web application for identifying potentially
+                            malicious and phishing websites, including
+                            functionality for flagging malicious links.
+                        </p>
+                        <div class="project-tech">
+                            <span>Web Security</span>
+                            <span>Python</span>
+                            <span>Flask</span>
+                        </div>
+                        <a href="https://github.com/faisalyaseen00/Phishing-Domain-Detector" class="project-link" target="_blank" rel="noopener noreferrer">
+                            View Project
+                        </a>
+                    </article>
+
+                    <article class="project-card">
+                        <span class="project-category">FULL-STACK</span>
+                        <h3>Stationery Management System</h3>
+                        <p>
+                            A full-stack web application for managing
+                            stationery inventory and operations, with
+                            functionality adaptable for café management.
+                        </p>
+                        <div class="project-tech">
+                            <span>Full-Stack</span>
+                            <span>Web</span>
+                            <span>Database</span>
+                        </div>
+                        <a href="https://github.com/faisalyaseen00" class="project-link" target="_blank" rel="noopener noreferrer">
+                            View Project
+                        </a>
+                    </article>
+
+                    <article class="project-card">
+                        <span class="project-category">SOFTWARE ENGINEERING</span>
+                        <h3>Xonic Game</h3>
+                        <p>
+                            A C++ multiplayer game built with SFML,
+                            demonstrating OOP, game logic, file handling,
+                            and practical data structures.
+                        </p>
+                        <div class="project-tech">
+                            <span>C++</span>
+                            <span>SFML</span>
+                            <span>AVL Tree</span>
+                            <span>Heap</span>
+                        </div>
+                        <a href="https://github.com/faisalyaseen00" class="project-link" target="_blank" rel="noopener noreferrer">
+                            View Project
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Faisal Yaseen. Built with purpose.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

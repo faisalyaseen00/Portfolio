@@ -1,0 +1,22 @@
+# Operating-system files
+.DS_Store
+Thumbs.db
+
+# Editor and IDE settings
+.vscode/
+.idea/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Generated dependencies and build output
+node_modules/
+dist/
+build/
+Faisal Yaseen.jpg

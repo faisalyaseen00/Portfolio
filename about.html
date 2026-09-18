@@ -3,73 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Faisal Yaseen Portfolio</title>
+    <meta name="description" content="About Faisal Yaseen — Cyber Security student and engineer focused on AI, security, and software.">
+    <meta name="author" content="Faisal Yaseen">
+    <title>About | Faisal Yaseen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+
     <nav class="navbar">
-        <div class="nav-brand">Faisal Yaseen</div>
+        <div class="nav-brand"><a href="index.html">Faisal Yaseen</a></div>
+
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html" class="active">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="certifications.html">Certifications</a></li>
-            <li><a href="blog.html">Blog</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="experience.html">Experience</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-        <button id="theme-toggle" class="theme-toggle">
+
+        <div class="nav-cv-wrap">
+            <button class="nav-cv" type="button" aria-expanded="false" aria-haspopup="true">
+                CVs <i class="fas fa-chevron-down" style="font-size:0.65em"></i>
+            </button>
+            <div class="cv-menu" role="menu">
+                <a href="assets/cv/faisal-ai.pdf" download role="menuitem">AI Engineer CV</a>
+                <a href="assets/cv/faisal-security.pdf" download role="menuitem">Security Engineer CV</a>
+                <a href="assets/cv/faisal-software.pdf" download role="menuitem">Software Engineer CV</a>
+            </div>
+        </div>
+
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
             <i class="fas fa-moon"></i>
         </button>
     </nav>
-    <section class="about-section" id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p class="about-intro">
-                I've always been drawn to the intersection of AI and cybersecurity — not just as technologies, but as a field where real-world impact happens. I learn best through building and exploring, which is why I completed a 6-month web penetration course, am nearly done with the Google Cybersecurity Certificate, and have already committed—with my teammate Waseem—to developing an AI-powered threat detection system for our Final Year Project, even though it's a year away. I'm currently learning tools like IBM QRadar, Darktrace, Microsoft Sentinel, and Vectra AI, aiming to understand how intelligent systems adapt in real-time. I'm not chasing titles — I'm chasing the next breakthrough.
-            </p>
-            <div class="traits">
-                <span class="trait"><i class="fas fa-search"></i> Curious by Nature</span>
-                <span class="trait"><i class="fas fa-flask"></i> Project-First Learning</span>
-                <span class="trait"><i class="fas fa-bolt"></i> Fast Learner</span>
-                <span class="trait"><i class="fas fa-shield-alt"></i> Security-Conscious</span>
-                <span class="trait"><i class="fas fa-brain"></i> Adaptive Thinker</span>
+
+    <main>
+        <section class="page-section about-section">
+            <div class="container">
+                <p class="page-label">About</p>
+                <h1 class="page-title">Building at the intersection of AI and security</h1>
+
+                <div class="about-grid about-grid-tight">
+                    <div class="about-text">
+                        <p class="section-intro">
+                            I'm a Cyber Security student and engineer focused
+                            on the intersection of artificial intelligence,
+                            security, and software development — building
+                            intelligent systems, secure applications, and
+                            practical software.
+                        </p>
+                        <p>
+                            My work spans AI engineering, agentic workflows,
+                            AI security, application security, backend
+                            development, and security-focused software.
+                        </p>
+                        <p>
+                            I enjoy taking security and software problems
+                            and turning them into practical systems that
+                            can actually be used.
+                        </p>
+                        <p>
+                            I learn best by building — from completing a
+                            6-month web application penetration testing
+                            program to developing AI-powered security systems
+                            and agentic applications.
+                        </p>
+
+                        <div class="traits">
+                            <span class="trait"><i class="fas fa-search"></i> Curious by nature</span>
+                            <span class="trait"><i class="fas fa-flask"></i> Project-first learning</span>
+                            <span class="trait"><i class="fas fa-bolt"></i> Fast learner</span>
+                            <span class="trait"><i class="fas fa-shield-alt"></i> Security-conscious</span>
+                            <span class="trait"><i class="fas fa-brain"></i> Adaptive thinker</span>
+                        </div>
+
+                        <div class="about-stats">
+                            <div class="stat-card">
+                                <strong>3</strong>
+                                <span>Engineering Domains</span>
+                            </div>
+                            <div class="stat-card">
+                                <strong>6</strong>
+                                <span>Featured Projects</span>
+                            </div>
+                            <div class="stat-card">
+                                <strong>3</strong>
+                                <span>Industry Internships</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img
+                        class="about-photo"
+                        src="Faisal%20Yaseen.jpg"
+                        alt="Faisal Yaseen"
+                        width="400"
+                        height="500"
+                    >
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="education-section" id="education">
-        <div class="container">
-            <h2>Education</h2>
-            <div class="education-details">
-                <span class="edu-degree">BS Cyber Security</span>
-                <span class="edu-institution">FAST National University, Islamabad</span>
-                <span class="edu-status">Currently Enrolled</span>
+        </section>
+
+        <section class="domains-section">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Focus Areas</h2>
+                </div>
+
+                <div class="domains-grid">
+                    <article class="domain-card">
+                        <div class="domain-icon"><i class="fas fa-brain"></i></div>
+                        <h3>AI Engineering</h3>
+                        <p>
+                            LLM applications, agentic workflows, RAG systems,
+                            and intelligent automation with Python and modern AI tooling.
+                        </p>
+                    </article>
+                    <article class="domain-card">
+                        <div class="domain-icon"><i class="fas fa-shield-halved"></i></div>
+                        <h3>Security Engineering</h3>
+                        <p>
+                            AI security, application security, threat detection,
+                            and secure software design.
+                        </p>
+                    </article>
+                    <article class="domain-card">
+                        <div class="domain-icon"><i class="fas fa-code"></i></div>
+                        <h3>Software Engineering</h3>
+                        <p>
+                            Backend and full-stack systems with APIs, databases,
+                            authentication, and deployment.
+                        </p>
+                    </article>
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="contact-section">
-        <div class="container">
-            <h2>Get in Touch</h2>
-            <div class="contact-details">
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <a href="mailto:arainf287@gmail.com">arainf287@gmail.com</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <a href="tel:+923073708984">+92 307 3708984</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-github"></i>
-                    <a href="https://github.com/faisalyaseen00" target="_blank">GitHub</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-linkedin"></i>
-                    <a href="https://www.linkedin.com/in/faisal-yaseen-b0604a2b2" target="_blank">LinkedIn</a>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Faisal Yaseen. Built with purpose.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
